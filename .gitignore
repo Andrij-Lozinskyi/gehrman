@@ -1,0 +1,37 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# Secrets and local environment — never commit
+.env
+.env.*
+!.env.example
+
+# Gehrman local state (user config, SQLite, raw snapshots)
+.gehrman/
+config.toml
+*.db
+*.sqlite
+*.sqlite3
+*.json.gz
+
+# SBOM artifacts generated locally (CI uploads them)
+sbom*.json
+sbom*.xml
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
